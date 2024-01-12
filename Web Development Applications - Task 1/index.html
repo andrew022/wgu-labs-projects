@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Missouri Cities</title>
+		<link rel="stylesheet" href="styles.css">
+	<head>
+	<script>
+		function emailVerify(theForm) {
+			if (theForm.email.value != theForm.verify.value)
+			{
+				window.alert('Please use matching emails');
+				return false;
+			} else {
+				return true;
+			}
+		}
+	</script>
+	<header>
+		<div>
+			<h1>Missouri and it's Cities</h1>
+		</div>
+	</header>
+	<nav>
+		<div class="navi">
+			<ul>
+				<li><a href="jefferson/jefferson.html">Jefferson City</a></li>
+				<li><a href="louis/louis.html">Saint Louis</a></li>
+				<li><a href="columbia/columbia.html">Columbia</a></li>
+			</ul>
+		</div>
+	</nav>
+	<aside>
+		<div id="arch2">
+			<a href="https://en.wikipedia.org/wiki/Gateway_Arch" target="_blank"><img src="arch2.webp" alt="Aside Arch" width="250" height="325"></a>
+			<figcaption>The Saint Louis Arch. Built in 1965 on October 28th.</figcaption>
+		</div>
+	</aside>
+	<section>
+		<div id="main"><img src="arch.jpg" alt="Missouri Arch" class="floatleft">Missouri is located in the midwest of the United States. The states was admitted to the Union on August 10th, 1821. Missouri was the 24th state added. Missouri has a population around 6.1 million which ranks them around 19th in the country. The average income of a resident in Missouri sits around $53,000. Majority of Missouri residents live in urban areas while only 33% live in rural areas. To learn about some of the citites in Missouri, click on the links to the left of the page.</div>
+		<div id="data">
+			<table>
+				<caption>Missouri Cities Population Data</caption>
+				<tr>
+					<th></th>
+					<th>Founded</th>
+					<th>Area Code</th>
+					<th> Est. Population</th>
+				</tr>
+				<tr>
+					<th>Saint Louis</th>
+					<td>Feb. 14, 1764</td>
+					<td>314/557</td>
+					<td>293,310</td>
+				</tr>
+				<tr>
+					<th>Columbia</th>
+					<td>1821</td>
+					<td>573</td>
+					<td>128,555</td>
+				</tr>
+				<tr>
+					<th>Jefferson City</th>
+					<td>1821</td>
+					<td>573</td>
+					<td>149,807</td>
+				</tr>
+			</table>
+			The table located to the right displays different data about three different cities in Missouri. The selected cities are some of the most populated citites in the state. Listed on the table are citites Saint Louis, Columbia, and Jefferson City with data when founded, area code, and estimated population.
+		</div>
+		<form action="../" onsubmit="return emailVerify(this);">
+			<p>
+				<label for="first">First Name:</label>
+				<input type="text" id="first" name="first" placeholder="First Name">
+			</p>
+			<p>
+				<label for="last">Last Name:</label>
+				<input type="text" id="last" name="last" placeholder="Last Name">
+			</p>
+			<p>
+				<label for="email">Email Address:</label>
+				<input type="email" id="email" name="email" placeholder="Email Address">
+			</p>
+			<p>
+				<label for="verify">Verify Email:</label>
+				<input type="email" id="verify" name="verify" placeholder="Email Address">
+			</p>
+			<p><label for="question">Ask a question:</label></p>
+			<p><textarea id="question" name="question" rows="4" cols="50" placeholder="Ask a question"></textarea></p>
+			<p><input type="submit" value="Submit"></p>
+		</form>
+	</section>
+</html>
